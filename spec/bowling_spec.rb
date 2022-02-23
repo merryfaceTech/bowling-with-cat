@@ -16,4 +16,10 @@ describe 'bowling score' do
 		expect(bowling.score("3")).to eq(3)
 	end
 
+	it 'returns 5 if given one roll with 5 pins knocked down' do
+		bowling = Bowling.new
+		expect(bowling.score("5")).to eq(5)
+	end
+	
+
 end
