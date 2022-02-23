@@ -35,4 +35,10 @@ describe 'bowling score' do
 		bowling = Bowling.new
 		expect(bowling.score("23 53")).to eq(13)
 	end
+
+	it 'returns 8 if given 2 frames of 12 and 23' do
+		bowling = Bowling.new
+		expect(bowling.score("12 23")).to eq(8)
+	end
+
 end
